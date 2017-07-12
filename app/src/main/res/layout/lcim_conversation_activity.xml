@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_lcim"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="买手名称"
+            android:textColor="#545353"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/back_message"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:src="@mipmap/back"
+            />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_chat"
+        android:name="com.example.lin_sir_one.tripbuyer.leancloudchatkit.activity.LCIMConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_lcim"
+        />
+</RelativeLayout>

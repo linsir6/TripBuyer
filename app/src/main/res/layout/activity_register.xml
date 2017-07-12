@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/et_phonenumber_register_activity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:padding="8dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/et_code_register_activity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:hint="短信验证码"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_get_code_register_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="点击获取" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/ed_pwd_register_activity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:hint="登录密码"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/iv_display_pwd_register_activity"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignBottom="@+id/ed_pwd_register_activity"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_gravity="center"
+            android:background="@color/red_500" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_register_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_agreement_register_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意《协议》" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="暂不支持海外手机登录"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/bt_submit_register_activity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/select_button"
+        android:onClick="onLogin"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+
+        />
+</LinearLayout>

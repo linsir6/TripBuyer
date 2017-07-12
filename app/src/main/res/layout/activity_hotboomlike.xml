@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_special_address"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="代购喜好"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_back_special"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/back_shipping_address"
+            android:background="#dbdbdb"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/must_write_special_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_special_address"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/orange_finder_background_orange"
+
+        android:gravity="center"
+        android:text="必填"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/must_write_special_activity"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/must_write_special_activity"
+        android:text="这次订单的要求"
+        android:textColor="#595959"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/must_write_special_activity"
+        android:layout_alignStart="@+id/must_write_special_activity"
+        android:layout_below="@+id/must_write_special_activity"
+        android:layout_marginTop="8dp"
+        android:text="请如实填写，确保买家能够及时的提供要求（可多选）"
+        android:textColor="#717171"
+        android:textSize="11sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_1"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="美容护肤"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_2"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:drawableTint="@color/red_500"
+                android:gravity="center"
+                android:text="母婴产品"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_3"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="数码家电"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_4"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="品牌服饰"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_5"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="图书音像"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_6"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="生活百货"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_7"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="动漫周边"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_8"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="医疗保健"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_9"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="箱包鞋帽"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_10"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="地方特产"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_11"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="零食饮品"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_12"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:gravity="center"
+                android:text="工艺产品"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <CheckBox
+                android:id="@+id/hotBoom_like_ck_13"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="全部选择"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:visibility="invisible"
+                android:checked="false"
+                android:gravity="center"
+                android:text="全部选择"
+                android:layout_marginLeft="18dp"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="全部选择"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"
+                android:layout_marginLeft="18dp"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_finder"
+                android:button="@null"
+                android:layout_marginLeft="18dp"
+                android:checked="false"
+                android:gravity="center"
+                android:text="全部选择"
+                android:visibility="invisible"
+                android:textColor="@drawable/text_select_grey_orange"
+                android:textSize="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_hint_special"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#a3a3a3"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_special_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hint_special"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:text="还有什么需求要特殊说明的"
+        android:textColor="#595959"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/ed_hotbomm_ike"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/tv_special_special"
+        android:layout_margin="12dp"
+        android:background="@drawable/select_finder"
+        android:gravity="top"
+        android:hint="有什么对买手说的话"
+        android:padding="13dp"
+
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_count_hotboomlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ed_hotbomm_ike"
+        android:layout_alignEnd="@+id/ed_hotbomm_ike"
+        android:layout_alignRight="@+id/ed_hotbomm_ike"
+        android:layout_margin="8dp"
+        android:text="0/100"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/finish_special_requisition"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:background="@drawable/select_next"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

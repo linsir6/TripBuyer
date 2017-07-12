@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_shipping_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="收货地址"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+
+        <ImageView
+            android:id="@+id/back_manage_address"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvHint_shipping_address"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/rl_shipping_address"
+        android:background="#f0f0f0"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/manage_address_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvHint_shipping_address"
+        android:layout_above="@+id/relativeLayout">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:id="@+id/manage_add_address"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/yun_fei_you_mai_jia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/select_next"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="添加新地址"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

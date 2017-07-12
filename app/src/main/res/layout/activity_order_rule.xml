@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_shipping_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="订单规则"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/back_clause"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginTop="12sp"
+        android:text="1.买手身份信息已认证，如果订单成立，我们在买手发货时会检验买手回程信息（登机牌、车票、船票等）以保证买家的权益，请放心沟通；\n
+2.订单由买家发起，买手确认，订单成立后可到我的订单页面查询；\n
+3.双方应对订单进行详细沟通，以保证双方利益，必要时候请保留沟通记录，产生纠纷以双方沟通记录为依据；\n
+4.在买手未接单前，买家可申请撤单，如果订单成立，双方均不可撤单；\n
+5.订单成立，而买手未完成指定订单，则买手针对该笔订单缴纳的诚信保证金由平台支付给买方。"
+        android:textSize="18sp"/>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.lin_sir_one.tripbuyer">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--微信支付的相关内容  开始-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wx0f4493dbeca4d2b2"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".SendToWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic"/>
+        <activity
+            android:name=".AddFavoriteToWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic"/>
+        <activity
+            android:name=".GetFromWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic"/>
+        <activity
+            android:name=".ShowFromWXActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic"/>
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MMTheme.Basic"/>
+
+        <receiver
+            android:name=".AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <!--微信支付的相关内容  结束-->
+
+
+        <!--主逻辑界面  开始-->
+        <activity android:name=".ui.activity.HomeActivity"/>
+        <activity android:name=".ui.activity.ReleaseOrderActivity"/>
+        <activity android:name=".ui.activity.SetActivity"/>
+        <activity android:name=".ui.activity.ShippingAddressActivity"/>
+        <activity android:name=".ui.activity.EditAddressActivity"/>
+        <activity android:name=".ui.activity.SpecialRequisitionActivity"/>
+        <activity android:name=".ui.activity.ReleaseTravelActivity"/>
+        <activity android:name=".ui.activity.HotBoomLikeActivity"/>
+        <activity android:name=".ui.activity.ManageAddressActivity"/>
+        <activity android:name=".ui.activity.AllTravelActivity"/>
+        <activity android:name=".ui.activity.SellerTravelDetailsActivity"/>
+        <activity android:name=".ui.activity.BuyerRuleActivity"/>
+        <activity android:name=".ui.activity.OnlinePayActivity"/>
+        <activity android:name=".ui.activity.TestActivity"/>
+        <activity android:name=".ui.activity.TestActivity2"/>
+        <activity android:name=".ui.activity.OrderRuleActivity"/>
+        <activity android:name=".ui.activity.AllOrderActivity"/>
+        <activity android:name=".ui.activity.MeActivity"/>
+        <activity android:name=".ui.activity.MeRouteActivity"/>
+        <activity android:name=".ui.activity.MeOrderActivity"/>
+        <activity android:name=".ui.activity.MeWalletActivity"/>
+        <activity android:name=".leanchat.MainActivity"/>
+        <activity android:name=".ui.activity.BuyerOrderDetailsActivity"/>
+        <activity android:name=".ui.activity.SelectCity"/>
+        <activity android:name=".ui.activity.SelectCountry"/>
+        <activity android:name=".leanchat.LoginActivity"/>
+        <activity android:name=".ui.activity.MeReward"/>
+        <activity android:name=".ui.activity.AuthenticationActivity"/>
+        <activity android:name=".ui.activity.AboutActivity"/>
+        <activity android:name=".ui.activity.WithdrawActivity"/>
+        <activity android:name=".ui.activity.ClauseActivity"/>
+        <activity android:name=".ui.activity.LawActivity"/>
+        <activity android:name=".ui.activity.TradeActivity"/>
+        <activity android:name=".ui.activity.MeRewardDetails"/>
+        <activity android:name=".ui.activity.MeRouteDetailsActivity"/>
+        <activity android:name=".ui.activity.MeOrderDetailsActivity"/>
+        <activity android:name=".ui.activity.UploadAirTicketActivity"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ui.activity.SplashActivity"/>
+        <activity android:name=".ui.activity.StartPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--主逻辑界面  结束-->
+
+
+        <!--支付宝界面  开始-->
+        <activity
+            android:name=".Pay.PayDemoActivity"
+            android:icon="@drawable/msp_icon"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Pay.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <!--支付宝界面  结束-->
+
+
+        <!--leanCloud界面  开始-->
+        <activity
+            android:name=".leancloudchatkit.activity.LCIMConversationActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="cn.leancloud.chatkit.conversation_item_click_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".leancloudchatkit.activity.LCIMImageActivity"/>
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <activity android:name=".leancloudchatkit.activity.OrderActivity"/>
+        <!--leanCloud界面  结束-->
+
+
+    </application>
+
+</manifest>

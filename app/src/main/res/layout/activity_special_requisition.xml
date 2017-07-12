@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_special_address"
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="订单特殊要求"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_back_special"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/back_shipping_address"
+            android:background="#dbdbdb"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/must_write_special_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_special_address"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/orange_finder_background_orange"
+        android:layout_marginTop="22dp"
+        android:text="必填"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/must_write_special_activity"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/must_write_special_activity"
+        android:text="这次订单的要求"
+        android:textColor="#595959"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/must_write_special_activity"
+        android:layout_alignStart="@+id/must_write_special_activity"
+        android:layout_below="@+id/must_write_special_activity"
+        android:layout_marginTop="8dp"
+        android:text="请如实填写，确保订单的买手能够满足你的要求"
+        android:textColor="#717171"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="发货时间"
+        android:textColor="#595959"
+        android:textSize="12sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_special_5"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:text="必须有"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_special_6"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:text="可有可无"
+            android:textSize="10sp"/>
+
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_special_1"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="十天内"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_special_2"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:drawableTint="@color/red_500"
+            android:gravity="center"
+            android:text="十五天内"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_special_3"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:gravity="center"
+            android:text="二十天内"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_special_4"
+            android:layout_width="44dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/select_finder"
+            android:button="@null"
+            android:gravity="center"
+            android:text="不限"
+            android:textColor="@drawable/text_select_grey_orange"
+            android:textSize="10sp"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:textColor="@drawable/text_select_grey_orange">
+
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/radioGroup2"
+        android:layout_marginLeft="12dp"
+        android:text="有无包装"
+        android:textColor="#595959"
+        android:textSize="12sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_hint_special"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/radioGroup3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="22dp"
+        android:background="#a3a3a3"/>
+
+    <TextView
+        android:id="@+id/tv_special_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hint_special"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"
+        android:text="还有什么需求要特殊说明的"
+        android:textColor="#595959"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/ed_special"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/tv_special_special"
+        android:layout_margin="12dp"
+        android:background="@drawable/select_finder"
+        android:gravity="top"
+        android:hint="有什么对买手说的话"
+        android:padding="13dp"
+
+        android:textSize="12sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/finish_special_requisition"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:background="@drawable/select_next"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_count_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ed_special"
+        android:layout_alignEnd="@+id/ed_special"
+        android:layout_alignRight="@+id/ed_special"
+        android:layout_margin="8dp"
+        android:text="0/100"
+        />
+
+
+</RelativeLayout>

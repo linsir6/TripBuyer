@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_shipping_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="交易纠纷解决规则"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/back_trade"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="24dp"
+        android:text="旅行买手平台上发生的各种交易，使用方（买方和卖方）均无退货权利。买手在邮寄货物时候必须按照商品实际价值给予承保物流公司的货物保险，该保险费用及物流运输费用全部为买家承担，买家收到快递必须当面拆箱检验货物的完整性。"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="1)商品破损：包括但不仅限于商品因运输途中造成的损坏、残缺、无法正常使用，商品外观出现划痕或者瑕疵等。出现此类问题，直接按照货物保险规则进行索赔； "
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="2)　商品错发、少发问题，所有运费由买手承担；"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="3)　商品信息于售前未充分披露：包括但不仅限于商品的瑕疵、色差、尺码、适用人群、有效期、产地、材质等。此类问题由买家自行承担，需要买家在发起订单前，和买手进行详细的沟通并保留沟通信息做为凭证。如果凭证显示买手未按照买家要求提供产品，所有责任由买手自行承担；"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="4)　商品质量问题：商品自身问题造成的无法使用的情况，由买家自行承担；"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="5）正品问题：买家收到货后经验证为假冒伪劣产品，需要在指定时间内提供相关检验部门的检验证书，在此期间，旅行买手将冻结相关买手在旅行买手平台的相关账户，并配合买家对产品进行检验，属于买手责任，直接提交相关法律法规管辖的政府部门进行处理； "
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="6)　其他未符合旅行买手相关规定：包括但不仅限于买手未提供有效采购凭证（商品小票和刷卡水单）；旅行买手禁售限售商品等。"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout__"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="发布行程"
+            android:textColor="#545353"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/buyer_role_release_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="买手规则"
+            android:textColor="#848484"
+            android:textSize="12sp"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/back_release_distance"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative1"
+        android:layout_below="@+id/RelativeLayout__"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="#f0f0f0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#f0f0f0"
+                    android:text="      无论旅行到哪里，"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="#f0f0f0"
+                    android:text="      都有人需要你的帮助."
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/goods1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1">
+
+
+                <RelativeLayout
+                    android:id="@+id/travel_dates"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i4"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/chuxingriqi"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_pricea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i4"
+                        android:layout_toRightOf="@+id/i4"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="出行日期"
+
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_travel_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/iv1_distance"
+                        android:background="@color/white"
+                        android:text="未选择"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv1_distance"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/request"/>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/travel_dates"
+                    android:background="#dbdbdb"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/traver_from_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/text4"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/chuxingdidian"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i3"
+                        android:layout_toRightOf="@+id/i3"
+                        android:text="出行地点"
+                        android:textSize="12sp"/>
+
+                    <EditText
+                        android:id="@+id/travel_from_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|right"
+                        android:hint="未填写"
+                        android:maxWidth="150dp"
+                        android:textColor="#848484"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/begin_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="12dp"
+                        ></Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_below="@+id/traver_from_distance"
+                    android:background="#f0f0f0"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/travel_place_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/tt5"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i6"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/lvxingdidian"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_pricea6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i6"
+                        android:layout_toRightOf="@+id/i6"
+                        android:text="旅行地点"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/travel_where_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/iv1_distancea"
+                        android:background="@color/white"
+                        android:text="未选择"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv1_distancea"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/request"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/travel_place_1"
+                    android:background="#dbdbdb"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/delete_place_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_below="@+id/tt6"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/i7"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/circle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_cout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i7"
+                        android:layout_toRightOf="@+id/i7"
+                        android:text="删除国家"
+                        android:textSize="12sp"/>
+
+
+                    <TextView
+                        android:id="@+id/product_count_relese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="19dp"
+                        android:text="确认删除"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/place2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods1"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tt58"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="#f0f0f0"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/travel_place_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/tt58"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i42"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/circle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_pricea2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i42"
+                        android:layout_toRightOf="@+id/i42"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="旅行地点"
+
+                        android:textSize="12sp"/>
+
+
+                    <TextView
+                        android:id="@+id/travel_where_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/iv1_distanceaz"
+                        android:background="@color/white"
+                        android:text="未选择"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv1_distanceaz"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/request"/>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text42"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/travel_place_2"
+                    android:background="#dbdbdb"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/delete_place_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/text42"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i32"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/circle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i32"
+                        android:layout_toRightOf="@+id/i32"
+                        android:text="删除国家"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/img_product2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="19dp"
+                        android:text="确认删除"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/place3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/place2"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tt58r"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="#f0f0f0"/>
+
+                <RelativeLayout
+                    android:id="@+id/travel_place_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/tt58r"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i43"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/circle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_pricea3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i43"
+                        android:layout_toRightOf="@+id/i43"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="旅行地点"
+
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/travel_where_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_toLeftOf="@+id/iv1_distanceav"
+                        android:background="@color/white"
+                        android:text="未选择"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+
+                    <ImageView
+                        android:id="@+id/iv1_distanceav"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/request"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/text43"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/travel_place_3"
+                    android:background="#dbdbdb"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/delete_place_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/text43"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i33"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/circle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/release_product_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_toEndOf="@+id/i33"
+                        android:layout_toRightOf="@+id/i33"
+                        android:text="删除国家"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/img_product3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="19dp"
+                        android:text="确认删除"
+                        android:textColor="#848484"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@+id/place3"
+                android:background="#f0f0f0"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tv_hint">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dbdbdb"/>
+
+                <ImageView
+                    android:id="@+id/i8"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/add_"
+
+                    />
+
+                <TextView
+                    android:id="@+id/release_add_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/i8"
+                    android:layout_toRightOf="@+id/i8"
+                    android:text="添加商品"
+                    android:textSize="12sp"/>
+
+                <TextView
+
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="19dp"
+                    android:text="还可以添加三个商品"
+                    android:textColor="#848484"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/add_goods"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tv_hint"
+                android:background="@color/white"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dbdbdb"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/i9"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/add_"
+
+                    />
+
+                <TextView
+                    android:id="@+id/release_add_product9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/i9"
+                    android:layout_toRightOf="@+id/i9"
+                    android:text="添加商品"
+                    android:textColor="#848484"
+                    android:textSize="12sp"/>
+
+                <TextView
+
+                    android:id="@+id/textView28d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="19dp"
+                    android:text="还可以添加三个商品"
+                    android:textColor="#848484"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/add_country"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tv_hint"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dbdbdb"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/i20"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/add_"
+
+                    />
+
+                <TextView
+                    android:id="@+id/release_add_product99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/i20"
+                    android:layout_toRightOf="@+id/i20"
+                    android:text="添加国家"
+                    android:textColor="#848484"
+                    android:textSize="12sp"/>
+
+                <TextView
+
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="19dp"
+                    android:text="还可以添加两个国家"
+                    android:textColor="#848484"
+                    android:textSize="12sp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/back_date"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/add_goods"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dbdbdb"/>
+
+                <ImageView
+                    android:id="@+id/i10"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/fanchengshijian"
+
+                    />
+
+                <TextView
+                    android:id="@+id/release_add_product92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/i10"
+                    android:layout_toRightOf="@+id/i10"
+                    android:text="返回日期"
+                    android:textSize="12sp"/>
+
+                <ImageView
+
+                    android:id="@+id/imageView11"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/request"/>
+
+                <TextView
+                    android:id="@+id/back_time_release_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/release_add_product92"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/imageView11"
+                    android:layout_toStartOf="@+id/imageView11"
+                    android:text="未选择"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/hotBoom_like"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/back_date"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dbdbdb"/>
+
+                <ImageView
+                    android:id="@+id/i24"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/dai_gou_xi_hao"
+
+                    />
+
+                <TextView
+                    android:id="@+id/release_add_product90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/i24"
+                    android:layout_toRightOf="@+id/i24"
+                    android:text="代购喜好"
+                    android:textSize="12sp"/>
+
+                <ImageView
+
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/request"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/t88"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rel20"
+                android:background="#dbdbdb"/>
+
+
+            <TextView
+                android:id="@+id/t78"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/sub_goods"
+                android:background="#dbdbdb"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/RelativeLayout__"
+        android:background="#dbdbdb"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dbdbdb"/>
+
+
+        <TextView
+            android:id="@+id/yun_fei_you_mai_jia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sum_release"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="运费由买家承担并缴纳运单保险"
+            android:textSize="12dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/send_travel_release"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/yun_fei_you_mai_jia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/select_next"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发布行程"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

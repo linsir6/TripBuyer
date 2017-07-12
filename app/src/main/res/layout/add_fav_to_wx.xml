@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/NavPage">
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" >
+	    
+	    <TextView
+	        style="@style/TitleText"
+	        android:text="@string/send"/>
+	   
+	    <EditText
+	        android:id="@+id/openid_et"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/input_openid"/>
+	    
+	    <Button
+	        android:id="@+id/send_text"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_text"/>
+	    
+	    <Button
+	        android:id="@+id/send_img"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_img"/>
+	    
+	    <Button
+	        android:id="@+id/send_music"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_music"/>
+	    
+	    <Button
+	        android:id="@+id/send_video"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_video"/>
+	    
+	    <Button
+	        android:id="@+id/send_webpage"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_webpage"/>
+	    
+	    <Button
+	        android:id="@+id/send_appdata"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_appdata"/>
+	    
+	    <Button
+	        android:id="@+id/send_file"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_file"/>
+	    
+	    <Button
+	        android:id="@+id/send_emoji"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/send_emoji"/>
+	    
+	    <EditText
+	        android:id="@+id/get_token_scope_et"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/input_scope"/>
+	    
+	    <Button
+	        android:id="@+id/get_token"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/get_token_from_weixin"/>
+	    
+	    <Button
+	        android:id="@+id/unregister"
+	        style="@style/MMLineActionButton"
+	        android:layout_margin="10dp"
+	        android:text="@string/unregister_from_weixin"/>
+	    
+	</LinearLayout>
+</ScrollView>

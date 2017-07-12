@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="所有行程"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/product_name_all_order"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/back_select_city"
+            android:hint="   请输入要搜索的国家"
+            android:textColor="#545353"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/search_product"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignEnd="@+id/product_name_all_order"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/product_name_all_order"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="12dp"
+            android:src="@mipmap/search"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/back_select_city"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_all_address"
+        android:background="#dbdbdb"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl2_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_below="@+id/hint_all_address"
+        >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="发布买家订单"
+            android:textColor="#2a2a2a"
+            android:textSize="15sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:src="@mipmap/reward"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginBottom="17dp"
+            android:text="发布买家订单会让更多买手为您服务"
+            android:textSize="14sp"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rl2_all_address"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_all_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/degrees"
+            android:textAlignment="center"
+
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rf_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl3_all_address"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_all_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

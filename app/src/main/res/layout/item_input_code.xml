@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="209dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="输入验证码"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dismiss_input_code"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/close"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/back_input_code"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/back"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tel_input_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="45dp"
+            android:text="18304523113" />
+
+
+        <TextView
+            android:id="@+id/get_code_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/grey_finder"
+            android:layout_marginRight="47dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_marginTop="42dp"
+            android:text="59秒后重发"
+            android:textSize="12sp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tel_input_code"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/getCode_1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@color/orange_500"
+                    />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="36dp" />
+
+                <EditText
+                    android:id="@+id/getCode_2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:gravity="center"
+                    android:textCursorDrawable="@color/orange_500"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="36dp" />
+
+
+                <EditText
+                    android:id="@+id/getCode_3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:gravity="center"
+                    android:textCursorDrawable="@color/orange_500"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="36dp" />
+
+
+                <EditText
+                    android:id="@+id/getCode_4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:gravity="center"
+                    android:textCursorDrawable="@color/orange_500"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="36dp" />
+
+
+                <EditText
+                    android:id="@+id/getCode_5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:gravity="center"
+                    android:textCursorDrawable="@color/orange_500"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="36dp" />
+
+
+                <EditText
+                    android:id="@+id/getCode_6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_code"
+                    android:textCursorDrawable="@color/orange_500"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white" />
+
+</LinearLayout>

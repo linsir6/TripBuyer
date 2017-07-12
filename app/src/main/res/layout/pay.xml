@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/NavPage"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/TitleText"
+        android:text="@string/pay_by_wx_title"/>
+
+    <Button
+        android:id="@+id/appay_btn"
+        style="@style/MMLineActionButton"
+        android:layout_margin="10dp"
+        android:text="@string/pay_by_wxap"/>
+
+    <Button
+        android:id="@+id/check_pay_btn"
+        style="@style/MMLineActionButton"
+        android:layout_margin="10dp"
+        android:text="@string/check_pay"/>
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="获取相关信息"
+        />
+
+
+</LinearLayout>

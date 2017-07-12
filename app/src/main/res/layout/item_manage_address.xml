@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rel_manage"
+                android:layout_width="match_parent"
+                android:layout_height="148dp">
+
+    <TextView
+        android:id="@+id/manage_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="21dp"
+        android:maxLines="1"
+        android:text="关玮琳"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/manage_userTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="21dp"
+        android:text="18304523113"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/manage_userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_userName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:text="黑龙江省 齐齐哈尔市 南岗区 学府路52号 黑龙江大学c28南"/>
+
+    <TextView
+        android:id="@+id/hint_manage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="102dp"
+        android:background="#f2f2f2"
+        />
+
+
+    <CheckBox
+        android:id="@+id/manage_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设为默认"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/hint_manage"
+        android:textColor="#5b5b5b"
+        android:textSize="12sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/manage_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/manage_userTel"
+        android:layout_alignRight="@+id/manage_userTel"
+        android:layout_alignTop="@+id/manage_circle"
+        android:text="删除"
+        android:textColor="#5b5b5b"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/manage_delete"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/manage_delete"
+        android:layout_toStartOf="@+id/manage_delete"
+        android:src="@mipmap/delete"/>
+
+    <TextView
+        android:id="@+id/manage_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:text="编辑"
+        android:textColor="#5b5b5b"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/manage_edit"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/manage_edit"
+        android:layout_toStartOf="@+id/manage_edit"
+
+        android:src="@mipmap/edit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f0f0f0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

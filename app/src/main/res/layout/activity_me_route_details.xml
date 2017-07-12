@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的行程详情"
+            android:textColor="#545353"
+            android:textSize="18sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/back_details"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_margin="12dp"
+            android:src="@mipmap/back"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl_all_address"
+        android:background="#dbdbdb"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl2_all_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/hint_all_address">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="发布买手行程"
+            android:textColor="#2a2a2a"
+            android:textSize="15sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:src="@mipmap/reward"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginBottom="17dp"
+            android:text="查看全部买手行程"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/hint_address_details"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@mipmap/request"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl2_all_address">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:text="我的行程 ："
+                android:textColor="#2a2a2a"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/hint2_address_details"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="45dp"
+                android:background="#dbdbdb"/>
+
+            <ImageView
+                android:id="@+id/iv_user_details"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/hint2_address_details"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="18dp"
+                android:src="@mipmap/linsir"
+
+                />
+
+            <TextView
+                android:id="@+id/user_name_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hint2_address_details"
+                android:layout_marginLeft="113dp"
+                android:layout_marginTop="28dp"
+                android:text="18304523113"
+                android:textColor="#2a2a2a"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/country_1_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_name_details"
+                android:layout_alignStart="@+id/user_name_details"
+                android:layout_below="@+id/user_name_details"
+                android:layout_marginTop="15dp"
+                android:text="中国-马来西亚"
+                android:textColor="#aeaeae"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/country_2_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_name_details"
+                android:layout_alignStart="@+id/user_name_details"
+                android:layout_below="@+id/country_1_details"
+                android:layout_marginTop="8dp"
+                android:text="中国-泰国"
+                android:textColor="#aeaeae"/>
+
+
+            <ImageView
+                android:id="@+id/flag2_details"
+                android:layout_width="31dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/flag1_details"
+                android:layout_alignStart="@+id/flag1_details"
+                android:layout_alignTop="@+id/country_2_details"
+                android:background="@color/orange_500"/>
+
+
+            <TextView
+                android:id="@+id/country_3_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/country_2_details"
+                android:layout_alignStart="@+id/country_2_details"
+                android:layout_below="@+id/country_2_details"
+                android:layout_marginTop="8dp"
+                android:text="中国-新加坡"
+                android:textColor="#aeaeae"/>
+
+
+            <ImageView
+                android:id="@+id/flag3_details"
+                android:layout_width="31dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/flag2_details"
+                android:layout_alignStart="@+id/flag2_details"
+                android:layout_alignTop="@+id/country_3_details"
+                android:background="@color/orange_500"/>
+
+
+            <ImageView
+                android:id="@+id/flag1_details"
+                android:layout_width="31dp"
+                android:layout_height="21dp"
+                android:layout_alignRight="@+id/rel_address_details"
+                android:layout_alignTop="@+id/country_1_details"
+                android:layout_marginRight="32dp"
+                android:background="@color/orange_500"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_above="@+id/begin_where_details"
+                android:layout_alignLeft="@+id/iv_user_details"
+                android:layout_alignStart="@+id/iv_user_details"
+                android:layout_alignTop="@+id/begin_time_details"
+                android:src="@drawable/circle2"/>
+
+            <TextView
+                android:id="@+id/begin_time_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country_3_details"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:text="出行时间：2016.2.1-2016.8.9"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+
+                android:layout_alignBottom="@+id/special_request_details"
+                android:layout_alignEnd="@+id/imageView8"
+                android:layout_alignLeft="@+id/imageView8"
+                android:layout_alignRight="@+id/imageView8"
+                android:layout_alignStart="@+id/imageView8"
+                android:layout_alignTop="@+id/special_request_details"
+                android:src="@drawable/circle2"/>
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+
+                android:layout_alignLeft="@+id/imageView7"
+                android:layout_alignStart="@+id/imageView7"
+                android:layout_alignTop="@+id/rel_address_details"
+                android:src="@drawable/circle2"/>
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignStart="@+id/imageView5"
+                android:layout_alignTop="@+id/begin_where_details"
+                android:src="@drawable/circle2"/>
+
+            <TextView
+                android:id="@+id/begin_where_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/begin_time_details"
+                android:layout_alignStart="@+id/begin_time_details"
+                android:layout_below="@+id/begin_time_details"
+                android:layout_marginTop="17dp"
+                android:text="出行地点：黑龙江省-哈尔滨市"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_address_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/begin_where_details"
+                android:layout_alignStart="@+id/begin_where_details"
+                android:layout_below="@+id/begin_where_details"
+                android:layout_marginTop="17dp"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"
+
+                >
+
+                <TextView
+                    android:id="@+id/Purchasing_address_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代购喜好："
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"/>
+
+
+                <com.example.lin_sir_one.tripbuyer.customview.FlowLayout
+                    android:id="@+id/customView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView19"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@+id/Purchasing_address_details"-->
+                    <!--android:background="@drawable/grey_finder"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="1dp"-->
+                    <!--android:text="美白护肤"-->
+                    <!--android:textColor="#a0a0a0"-->
+                    <!--android:textSize="12sp"-->
+                    <!--/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView18"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="13dp"-->
+                    <!--android:layout_toEndOf="@+id/textView19"-->
+                    <!--android:layout_toRightOf="@+id/textView19"-->
+                    <!--android:background="@drawable/grey_finder"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="1dp"-->
+                    <!--android:text="美白护肤"-->
+                    <!--android:textColor="#a0a0a0"-->
+                    <!--android:textSize="12sp"-->
+                    <!--/>-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView20"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="12dp"-->
+                    <!--android:layout_toRightOf="@+id/textView18"-->
+                    <!--android:background="@drawable/grey_finder"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="1dp"-->
+                    <!--android:text="New Text"-->
+                    <!--android:textColor="#a0a0a0"-->
+                    <!--android:textSize="12sp"-->
+                    <!--/>-->
+
+                </com.example.lin_sir_one.tripbuyer.customview.FlowLayout>
+
+
+                <com.example.lin_sir_one.tripbuyer.customview.FlowLayout
+                    android:id="@+id/flowLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customView"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    >
+
+
+                </com.example.lin_sir_one.tripbuyer.customview.FlowLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/down"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/special_request_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rel_address_details"
+                android:layout_alignStart="@+id/rel_address_details"
+                android:layout_below="@+id/rel_address_details"
+                android:layout_marginTop="17dp"
+                android:text="特殊要求：沉迷学习日渐消瘦"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/special_request_details"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/message_details"
+                    android:layout_width="293dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/grey_finder"
+                    android:gravity="center"
+                    android:text="取消行程在主界面的显示"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/shou_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="收入"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/ri_qi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shou_ru"
+        android:layout_alignStart="@+id/shou_ru"
+        android:layout_below="@+id/shou_ru"
+        android:layout_marginTop="12dp"
+        android:text="2016-03-07"/>
+
+    <TextView
+        android:id="@+id/qian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="+100"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dbdbdb"
+
+        />
+</RelativeLayout>

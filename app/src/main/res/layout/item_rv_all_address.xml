@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#dbdbdb"/>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/circle"
+        />
+
+    <ImageView
+        android:id="@+id/user_info_all_address"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="14dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_userName_all_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/user_info_all_address"
+        android:layout_toRightOf="@+id/user_info_all_address"
+        android:textColor="#2a2a2a"
+        android:textSize="16sp"
+
+        />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/tv_userName_all_address"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/tv_userName_all_address"
+        android:layout_toRightOf="@+id/tv_userName_all_address"
+        android:src="@mipmap/talk"/>
+
+    <TextView
+        android:id="@+id/user_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_userName_all_address"
+        android:layout_alignStart="@+id/tv_userName_all_address"
+        android:layout_below="@+id/tv_userName_all_address"
+        android:layout_marginTop="6dp"
+        android:textColor="#aeaeae"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/user_hint"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/user_info_all_address"
+
+        android:background="#dbdbdb"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/chu_xing_shi_jian"/>
+
+    <TextView
+        android:id="@+id/tv_begin_all_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_below="@+id/tv_begin_all_address"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/chu_xing_di_dian"/>
+
+    <TextView
+        android:id="@+id/tv_place_all_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_begin_all_address"
+        android:layout_alignStart="@+id/tv_begin_all_address"
+        android:layout_below="@+id/tv_begin_all_address"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/tv_place_all_address"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/tv_begin_all_address"
+        android:layout_toStartOf="@+id/tv_begin_all_address"
+        android:src="@mipmap/chu_xing_shi_jian"/>
+
+    <TextView
+        android:id="@+id/tv_end_time_all_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_place_all_address"
+        android:layout_alignStart="@+id/tv_place_all_address"
+        android:layout_below="@+id/tv_place_all_address"
+        android:layout_marginTop="12dp"
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+    android:layout_below="@+id/tv_end_time_all_address"
+    />
+</RelativeLayout>

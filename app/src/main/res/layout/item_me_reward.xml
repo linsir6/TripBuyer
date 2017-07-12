@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="12dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="17dp"
+        android:background="@color/orange_500"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/iv_product"
+        android:maxWidth="200dp"
+        android:text="商品名"
+        />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/iv_product"
+        android:text="￥175"/>
+
+    <TextView
+        android:id="@+id/tv_product_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="17dp"
+        android:text=""/>
+
+
+    <TextView
+        android:id="@+id/tv_product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_product_hint"
+        android:layout_alignRight="@+id/tv_product_hint"
+        android:layout_alignTop="@+id/tv_product_price"
+        android:text="x1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_product"
+        android:layout_marginTop="17dp"
+        android:background="#dbdbdb"
+        />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/go"/>
+
+
+</RelativeLayout>

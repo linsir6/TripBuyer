@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'             //与butterKnife相关
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.lin_sir_one.tripbuyer"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+        }
+        sourceSets {
+            main{
+                jniLibs.srcDirs=['libs']}
+        }
+    }
+
+    packagingOptions {
+        //exclude 'META-INF/LICENSE.txt'
+        //exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //微信的依赖包
+    compile files('libs/libammsdk.jar')
+    compile files('libs/httpclient-4.5.2.jar')
+    compile files('libs/httpclient-cache-4.5.2.jar')
+    compile files('libs/httpcore-4.4.4.jar')
+    compile 'com.zhy:okhttputils:2.0.0'
+    //官方的依赖内容
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    // RxJava Android 支持
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    // Retrofit 网络支持
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    // Gson 适配器
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    // Picasso 图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // Glide 图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //butterKnife注解依赖
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //leancloud聊天界面的依赖
+    //avoscloud-sdk 为 LeanCloud基础包
+    compile 'cn.leancloud.android:avoscloud-sdk:v3.+'
+    //avoscloud-push 为推送与实时聊天需要的包
+    compile('cn.leancloud.android:avoscloud-push:v3.+@aar') { transitive = true }
+    //avoscloud-statistics 为 LeanCloud 统计包
+    compile 'cn.leancloud.android:avoscloud-statistics:v3.+'
+    //avoscloud-feedback 为 LeanCloud 用户反馈包
+    compile 'cn.leancloud.android:avoscloud-feedback:v3.+@aar'
+    //avoscloud-sns 为 LeanCloud 第三方登录包
+    compile 'cn.leancloud.android:avoscloud-sns:v3.+@aar'
+    compile 'cn.leancloud.android:qq-sdk:1.6.1-leancloud'
+    //avoscloud-search 为 LeanCloud 应用内搜索包
+    compile 'cn.leancloud.android:avoscloud-search:v3.+@aar'
+    //根据拼音搜索
+    compile 'com.github.stuxuhai:jpinyin:1.0'
+    //与log有关的库
+    compile 'com.github.zhaokaiqiang.klog:library:0.0.1'
+    //实现界面通信的依赖
+    compile 'de.greenrobot:eventbus:2.4.0'
+    //一个与图片剪裁相关的库
+    compile 'com.yalantis:ucrop:2.1.2'
+    //与支付宝相关的依赖
+    compile files('libs/alipaySdk-20160516.jar')
+    compile 'com.jakewharton:butterknife:8.4.0'//butterKnife注解依赖
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'//butterKnife注解依赖
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/address"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/address"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人：关玮琳"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/address"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView3" />
+
+
+
+    <TextView
+        android:id="@+id/release_order_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18304523113"
+
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_below="@+id/release_order_tel"
+        android:layout_toRightOf="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收货地址：黑龙江省 哈尔滨市 南岗区 哈西街道学府路52 哈尔滨理工大学"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+
+</LinearLayout>
